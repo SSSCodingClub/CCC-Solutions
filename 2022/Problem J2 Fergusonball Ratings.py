@@ -12,6 +12,6 @@ for player in range(N):
     else:
         gold_team = False
 
-print(number_star_players,end="")
+print(number_star_players, end="")
 if gold_team:
     print('+')
