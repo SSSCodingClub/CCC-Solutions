@@ -1,17 +1,12 @@
-N = int(input())
+players = int(input())
+gold = 0
 
-gold_team = True
-number_star_players = 0
+for i in range(players):
+    goals, fouls = int(input()), int(input())
+    stars = (goals * 5) - (fouls * 3)
+    if stars > 40:
+        gold += 1
 
-for player in range(N):
-    points = int(input()) * 5
-    fouls = int(input()) * 3
-    star_rating = points - fouls
-    if star_rating > 40:
-        number_star_players += 1
-    else:
-        gold_team = False
-
-print(number_star_players, end="")
-if gold_team:
-    print('+')
+print(gold, end="")
+if gold == players:
+    print("+")

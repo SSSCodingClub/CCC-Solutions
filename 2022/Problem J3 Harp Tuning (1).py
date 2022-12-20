@@ -10,7 +10,7 @@ for i in instructions:
         sequence += " tighten "
     elif i == "-":
         sequence += " loosen "
-    else:  # is a letter
+    else: # is a letter
         if was_number:
             print(sequence)
             sequence = ""
