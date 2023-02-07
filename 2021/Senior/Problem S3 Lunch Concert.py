@@ -48,5 +48,6 @@ print(get_cost(people, bisection(people, 0, people[-1].pos)))  # Print the cost 
 # 		total_time += p.get_walk_time(i)  # Add their walk time to the total
 # 	# If the output is None or the total time is less than the output,
 # 	output = total_time if output is None else min(output, total_time)
+# 	print(i, total_time)
 #
 # print(output)  # Print the output
