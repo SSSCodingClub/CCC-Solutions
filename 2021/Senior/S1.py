@@ -1,11 +1,10 @@
-n = int(input())
+N = int(input())
 
-l1 = list(map(int, input().split()))
-l2 = list(map(int, input().split()))
+h = tuple(map(int, input().split()))
+w = tuple(map(int, input().split()))
 
-ans = 0
-for i in range(n):
-    ans += (l1[i] + l1[i+1]) * l2[i] / 2 # Formula for trapezoid area = (b1 + b2) * h / 2
+area = 0
+for i in range(N):
+    area += (h[i] + h[i+1]) * w[i] / 2
 
-print(ans)
-# print(int(ans)) # turns it into a whole number by ignoring all decimals after
+print(area)
